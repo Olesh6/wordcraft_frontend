@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from "next/navigation";
 import styles from "../styles/testSummary.module.css"
-
+const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 
 export default function TestSummary ({answersList, test, level}){
@@ -55,7 +55,7 @@ export default function TestSummary ({answersList, test, level}){
             {task["image-url"] && (
               <div className={styles["image-container"]}>
                 <img 
-                  src={`http://localhost:3001/images/${task["image-url"]}`}
+                  src={`${BACKEND_BASE_URL}/images/${task["image-url"]}`}
                   alt="Task illustration"
                   className={styles["image"]} 
                 />

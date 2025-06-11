@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import styles from "../../../../styles/taskPage.module.css";
-
+const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export default function TaskPage() {
   const router = useRouter();
   const params = useParams();
@@ -18,7 +18,7 @@ export default function TaskPage() {
   useEffect(() => {
     async function fetchTasksAndFindOne() {
       try {
-        const res = await fetch(`http://localhost:3001/open_practice/${level}/?page=1&amount=100`);
+        const res = await fetch(`${BACKEND_BASE_URL}/open_practice/${level}/?page=1&amount=100`);
         const tasks = await res.json();
 
         const found = tasks.find(task => task["task-id"] === Number(taskId));

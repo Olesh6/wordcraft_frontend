@@ -3,7 +3,7 @@ import { useRouter, useParams } from "next/navigation";
 import { useRef, useEffect, useState } from "react";
 import styles from "../../../../styles/testPage.module.css"
 import TestSummary from "../../../../components/TestSummary.jsx"
-
+const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export default function TestPage() {
   const router = useRouter();
   const params = useParams();
@@ -26,7 +26,7 @@ export default function TestPage() {
   useEffect(() => {
     async function fetchTestsAndFindOne() {
       try {
-        const res = await fetch(`http://localhost:3001/timed_tests/test/${level}/${testId}`);
+        const res = await fetch(`${BACKEND_BASE_URL}/timed_tests/test/${level}/${testId}`);
         const found = await res.json();
 
         if (!found) throw new Error("Test not found");
@@ -201,7 +201,7 @@ export default function TestPage() {
       {currentTask["image-url"] && (
         <div className={styles["image-container"]}>
           <img 
-            src={`http://localhost:3001/images/${currentTask["image-url"]}`}
+            src={`${BACKEND_BASE_URL}/images/${currentTask["image-url"]}`}
             alt="Task illustration"
             className={styles["image"]} 
           />

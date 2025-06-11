@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/taskList-content.module.css";
 import {useRouter} from "next/navigation";
-
+const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export default function TaskList({ level, mode}){
 	const router = useRouter();
 	const [tasks, setTasks] = useState([]);
@@ -55,7 +55,7 @@ export default function TaskList({ level, mode}){
 	async function loadTasks() {
 		setLoading(true);
     try {
-      const res = await fetch(`http://localhost:3001/${mode}/${level}/?page=1&amount=100`);
+      const res = await fetch(`${BACKEND_BASE_URL}/${mode}/${level}/?page=1&amount=100`);
       const allTasks = await res.json();	
       setTasks(allTasks);
 			
