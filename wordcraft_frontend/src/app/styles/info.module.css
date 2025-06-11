@@ -1,0 +1,135 @@
+.help-icon{
+  position: fixed; 
+  bottom: 20px; 
+  left: 20px; 
+  width: 35px; 
+  height: 35px;  
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  font-family: 'Segoe UI', sans-serif; 
+  cursor: pointer; 
+  transition: transform 0.2s ease; 
+  z-index: 100;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.help-icon:hover {
+  transform: scale(1.07); 
+}
+.help-icon:active { 
+  transform: scale(0.97); 
+}
+/* modal */
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease; 
+}
+
+.modal{
+  background-color: #4a4a4a;
+  padding: 1.6rem;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  color: white;
+  border-radius: 10px;
+  min-width: 320px;
+  max-width: 750px;
+  overflow-y: auto;
+  min-height: auto;
+  max-height: 91vh;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.2s ease-in-out;
+}
+.modal-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.modal-description {
+  text-align: justify;
+  margin-top: 1.1rem;
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem; 
+
+}
+.close-button{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  cursor: pointer;
+  padding: 8px 8px 5px 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  transform: scale(1.07); 
+  color: #ffffff;
+}
+
+.close-button:active {
+  transform: scale(0.93); 
+}
+.task-list {
+  list-style: none; 
+  padding: 0; 
+  margin: 1rem auto 1rem auto; 
+  max-width: 90%; 
+  text-align: left; 
+}
+
+.task-list li {
+  margin-bottom: 0.8rem; 
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238); 
+  line-height: 1.5;
+  text-indent: -1.2em; 
+  padding-left: 1rem; 
+}
+
+
+.highlight-task {
+  color: #a0f0ff; 
+  font-weight: 600; 
+  text-decoration: underline; 
+  text-decoration-color: #a0f0ff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px; 
+}
+
+.support-email {
+  color: #8cc3ff; 
+  text-decoration: none; 
+  border-bottom: 1px solid #8cc3ff; 
+  transition: all 0.2s ease-in-out; 
+}
+
+.support-email:hover {
+  color: #b3d9ff;
+  border-color: #b3d9ff;
+}
+
+.support-email:active {
+  color: #66aaff;
+  border-color: #66aaff;
+}

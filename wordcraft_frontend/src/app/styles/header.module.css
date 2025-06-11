@@ -1,0 +1,24 @@
+.app-header{
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0 #5b5757; 
+
+  background-color: white;
+  color: rgb(179, 35, 35);
+  z-index: 100;
+
+}
+
+
+.navbar_logo{
+  box-sizing: border-box;
+}

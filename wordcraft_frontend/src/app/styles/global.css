@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+  
+.content-with-sidebar{
+  display: flex;
+  min-height: 100vh;
+  overflow-y: visible;
+  margin-top: 11vh;
+  width: 100%;
+}
+
+.main-page {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.level-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
