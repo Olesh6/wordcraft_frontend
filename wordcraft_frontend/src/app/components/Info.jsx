@@ -1,6 +1,7 @@
 "use client"
 import styles from "./../styles/info.module.css";
 import { useState } from "react";
+import Image from "next/image"
 
 export default function Info(){
 
@@ -10,7 +11,7 @@ export default function Info(){
   return (
     <div>
       <div className={styles["help-icon"]}>
-        <img
+        <Image
           src="/icons/info.png"
           alt="info"
           width={45}
@@ -45,7 +46,7 @@ export default function Info(){
           
 
             <div className={styles["close-button"]}>
-              <img 
+              <Image 
                 src="/icons/cross.png"
                 alt="cross"
                 onClick={() => setShowInfo(false)}

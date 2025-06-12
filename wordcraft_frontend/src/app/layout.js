@@ -5,7 +5,10 @@ import Info from "./components/Info.jsx"
 
 export const metadata = {
   title: "WordCraft",
-  description: "Best site"
+  description: "Best site",
+  icons: {
+    icon: "/icon.png"
+  }
 }
 
 

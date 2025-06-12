@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from "next/navigation";
-import styles from "../styles/testSummary.module.css"
+import styles from "../styles/testSummary.module.css";
+import Image from "next/image";
 const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 
@@ -43,7 +44,7 @@ export default function TestSummary ({answersList, test, level}){
   
             <div className={styles["review-article"]}>
               <h1>Task {index + 1 } of {test.tasks.length}</h1>
-              <img
+              <Image
                 src={passed ? "/icons/passed.png" : "/icons/failed.png"}
                 alt={passed ? "Passed" : "Failed"}
                 width={31}

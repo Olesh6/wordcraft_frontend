@@ -4,6 +4,8 @@ import styles from "../../styles/taskList-content.module.css";
 import TaskList from "../../components/TaskList.jsx";
 import { useState } from "react";
 import {use} from "react";
+import Image from "next/image"
+
 const allowedLevels = ["a2","b1","b2","c1"];
 
 
@@ -30,7 +32,7 @@ export default function Level({params}){
       <div className={styles["header-block"]}>
         <div className={styles["text-side"]}>
           <h1 className={styles["title"]}>{getTitle(level)}</h1>
-          <img
+          <Image
             src="/icons/turn_on.png"
             alt="turn on"
             tabIndex={0}

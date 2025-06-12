@@ -1,0 +1,8 @@
+.main {
+    background-image: url("/main_page.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100%;
+}

@@ -4,21 +4,44 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 1.5rem;
+  padding: 0.7rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 11vh;
+  min-height: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px 0 #5b5757; 
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1); 
 
   background-color: white;
-  color: rgb(179, 35, 35);
+  color:  #333333;
   z-index: 100;
 
 }
+.logo-link{
+  text-decoration: none; 
+  color: inherit;       
+  transition: opacity 0.2s ease-in-out;
+}
+.logo-link:hover {
+  opacity: 0.9; 
+}
 
+.app-logo-container{
+  display: flex; 
+  align-items: center; 
+  gap: 0.7rem; 
+  cursor: pointer; 
 
-.navbar_logo{
-  box-sizing: border-box;
+}
+.app-title{
+  font-size: 1.7rem; 
+  font-weight: 700; 
+  color: #2462a5; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-logo{
+  border-radius: 4px;
+  margin-bottom: 5px;
 }

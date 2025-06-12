@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import styles from "../../../../styles/taskPage.module.css";
 const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 export default function TaskPage() {
   const router = useRouter();
   const params = useParams();
