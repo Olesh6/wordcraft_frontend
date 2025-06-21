@@ -7,7 +7,7 @@ export const metadata = {
   title: "WordCraft",
   description: "Best site",
   icons: {
-    icon: "/icon.png"
+    icon: "/icon.svg"
   }
 }
 

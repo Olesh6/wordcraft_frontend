@@ -1,8 +1,6 @@
 .sidebar{
   width: 19.5vw;
   max-width: 26vw;
-  min-width: 40px;
-  overflow-y: auto;
   top: 11vh;
   height: 89vh;
   position: sticky;
